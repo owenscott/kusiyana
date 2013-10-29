@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Kusiyana</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			
+			<!--Title Bar-->
+			<div class="row-fluid">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<a class="brand">Kusiyana - Chichewa Spelling Permutations</a>	
+					</div>
+				</div>
+			</div>
+			
+			<!--Overview-->
+			<p>Chichewa spelling has a lot of variation in daily usage. This variation makes data collection and data lookup difficult when a Chichewa word, such as a village name, is being used as a key. This module generates simple permutations for Chichewa words, based on common spelling variations. The permutations can then be used as keys in a lookup function. Essentially it enables sort of a Chichewa-specific fuzzy search. The form, below, gives a basic demo.</p>
+			</br>
+			
+			<!--Form-->
+			<div class="row-fluid">
+				<div class="form-horizontal">
+					<input type="text" id="word" placeholder="Type a Chichewa word"/>
+					<button class="btn btn-inverse" id="createPermutations">Go</button>
+				</div>
+			</div>
+			</br>
+			<div class="row-fluid">
+				<p id="result"></p>
+			</div>
+		</div>	
+		
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/kusiyana.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
